@@ -1,18 +1,8 @@
 <mat-toolbar>
-    <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <button (click)="showSidenav()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
     <p>OpenUpShop</p>
 </mat-toolbar>
 
 
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" [style]=" showFiller? 'width:15vw':'width:20vw' " mode="side" >
-    
-    <p>{{myname}}</p>
-    <button (click)="onClick()">show text</button>
-    <button (click)="showFiller = !showFiller" id="btn-showFiller"></button>
-  </mat-drawer>
-
-
-</mat-drawer-container>

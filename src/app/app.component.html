@@ -7,11 +7,9 @@
 </head>
 <body>
     
-    <app-navbar (childfooter)="message=$event"  [name]="Name"></app-navbar>
-    <!-- <app-sidnav></app-sidnav> -->
-    <div class="footer" style="height: auto;position: sticky;background: blue;">
-        {{message}}
-    </div>
+    <app-navbar (showContent)="value=$event"></app-navbar>
+    <app-sidenav [val]="value"></app-sidenav>
+    
     
 
 </body>
