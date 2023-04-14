@@ -5,4 +5,23 @@
     <p>OpenUpShop</p>
 </mat-toolbar>
 
+<table class="table tbl">
+  <tr class="row">
+    <th class="col">ID</th>
+    <th class="col">NAME</th>
+    <th class="col">CODE</th>
+    <th class="col">QUANTITY</th>
+    <th class="col">PRICE</th>
+    <th class="col">STARRATING</th>
+  </tr>
+  <tr class="row" *ngFor="let product of products">
+    <td class="col">{{product.id}}</td>
+    <td class="col">{{product.name}}</td>
+    <td class="col">{{product.code}}</td>
+    <td class="col">{{product.quantity}}</td>
+    <td class="col">{{product.price}}</td>
+    <td class="col">{{product.starRating}}</td>
+  </tr>
+</table>
+
 

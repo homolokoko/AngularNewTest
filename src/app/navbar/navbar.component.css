@@ -8,3 +8,13 @@
 
 
 
+.tbl{
+    width: 70%;
+    margin: 40px auto;
+}
+th{
+    font-weight: 500;
+}
+.row{
+    box-shadow: 0 1px 0 gray;
+}
