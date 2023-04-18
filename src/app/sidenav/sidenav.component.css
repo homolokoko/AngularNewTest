@@ -1,5 +1,23 @@
 .sidenav{
+    position: relative;
     width:20vw;
-    height: 100%;
-    background-color: brown;
+    height: 70vw;
+    box-shadow: 2px 0 0 gray;
+}
+.lists{
+    margin-top: 30px;
+    width:90%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    margin-top:15px;
+    font-size: 14pt;
+    font-weight: 500;
+    font-family: monospace;
+    box-shadow: 0 0 3px gray;
+    border-radius: 5px;
+    text-align: center;
 }

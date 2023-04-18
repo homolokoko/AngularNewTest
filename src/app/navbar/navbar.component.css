@@ -1,6 +1,8 @@
-.example-spacer {
-    flex: 1 1 auto;
+#user{
+    position: absolute;
+    right: 10px;
 }
+
 .container{
     width:20vw;height:100vh;background-color:aquamarine;
 }
@@ -9,7 +11,7 @@
 
 
 .tbl{
-    width: 70%;
+    width: 50%;
     margin: 40px auto;
 }
 th{

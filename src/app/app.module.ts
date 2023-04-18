@@ -12,12 +12,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ProductsService } from './products.service';
+import { AccountComponent } from './account/account.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SidenavComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { ProductsService } from './products.service';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
+    HttpClientModule,
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]

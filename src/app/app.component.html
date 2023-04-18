@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+
     
-    <app-navbar (showContent)="value=$event"></app-navbar>
+    <app-navbar (showContent)="value=$event" (resume)="show=$event"></app-navbar>
     <app-sidenav [val]="value"></app-sidenav>
+    <app-account [showResume]="show" style="position: absolute;top:65px;right: 10px;"></app-account>
     
     
 

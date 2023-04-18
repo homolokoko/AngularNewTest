@@ -8,4 +8,5 @@ import { Component, Input, Output } from '@angular/core';
 export class AppComponent {
   title = 'test';
   @Output() public value = '';
+  @Output() public show: any;
 }

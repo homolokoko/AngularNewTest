@@ -1,0 +1,61 @@
+.account_container {
+    position: relative;
+    width: 50vw;
+    height: 80vw;
+    box-shadow: 0 0 3px gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+
+.title {
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    background-color: #08bcbc;
+    display: flex;
+
+}
+.me{
+    position: absolute;
+    margin-left: 50px;
+    width: 250px;
+    height: 100%;
+    background-color: #a65ceb;
+}
+.description{
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+    width: 57%;
+    height: 60%;
+    background-color: blue;
+}
+.title span {
+    width: 200px;
+    height: auto;
+    margin-left: 320px;
+}
+
+.detail{
+    margin-top: 100px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detail .image{
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
