@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Iprofile } from './navbar/Iprofile';
+import { IProfile } from './Iprofile';
 
 
 @Injectable({
@@ -11,7 +11,7 @@ export class ProfileService {
 
   private profile:string = 'assets/profile/profile.json';
   constructor(private req:HttpClient) { }
-  getProfile() : Observable<Iprofile[]>{
-    return this.req.get<Iprofile[]>(this.profile); 
+  getProfile() : Observable<IProfile[]>{
+    return this.req.get<IProfile[]>(this.profile); 
   }
 }

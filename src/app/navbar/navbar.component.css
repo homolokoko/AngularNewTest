@@ -1,13 +1,19 @@
-#user{
+/* #user{
     position: absolute;
     right: 10px;
-}
+} */
+
+
+
+/* .active{color:black;padding: 5px;} */
 
 .container{
-    width:20vw;height:100vh;background-color:aquamarine;
+    width:20vw;height:100vh;background-color:rgb(30, 45, 92);
 }
 
+mat-toolbar{display: flex;justify-content: space-between;align-items: center;}
 
+.btn-bar,.btn-x{display: none;}
 
 
 .tbl{
@@ -19,4 +25,10 @@ th{
 }
 .row{
     box-shadow: 0 1px 0 gray;
+}
+
+@media screen and (max-width:500px){
+    .lists{display: none;}
+    .btn-bar,.btn-x{display:flex;cursor: pointer;}
+    #user{margin-right: 100px;}
 }

@@ -1,0 +1,32 @@
+<main>
+   <div class="wrap ">
+
+    <div class="main-block">
+        <div class="hello center-items flex-column">
+            <span class="intro d-flex">Hello,&nbsp; <p style="color:rgb(0, 179, 255)"> I'm</p></span>
+            <span class="name">SOU HENGTONG</span>
+            <span class="skill">Front-end, Back-end Developer</span>
+            <p class="lorem text-light">
+                Lorem ipsum dolor sit amet consectetur,adipisicing elit. Debitis eius veritatis
+            </p>
+            <button mat-flat-button color="primary">Getting Started</button>
+        </div>
+        <div class="signIn center-items flex-column" *ngIf="_hideFormLogin">
+            <form action="" method="post" enctype="mulitpart/form-data" class="frm-sign">
+                <button (click)="hideFormLogin()" mat-icon-button color="accent" class="fa fa-close" style="position: absolute;right: 0;top:0;font-size: 14pt;"></button>
+                <br><span style="font-size: 25pt;font-family:trebuchet ms;color:#f14f1d;font-weight: 600;">
+                    Welcome back
+                </span>
+                <p style="font-family: arial;color: #ffffff;">Please Login to order our products</p>
+                <input type="text" name="username" id="username" class="form-control" placeholder="username">
+                <input type="email" name="email" id="email" class="form-control" placeholder="email">
+                <input type="password" name="password" id="password" class="form-control" placeholder="password">
+                <input id="log-in" type="submit" value="Login" class="btn btn-primary">
+                <p class="text-light">Don't have an account ? <a href="">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    </div> 
+</main>
+

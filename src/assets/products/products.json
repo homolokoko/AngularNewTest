@@ -1,34 +1,38 @@
  [
     {
+    "imageUrl":"/assets/images/mb-c005_76076_hickman_grey_6-25-2019_hr_03.jpg",
     "id":1,
     "name":"product1",
     "code":"X01",
-    "quantity":100,
+    "discount":100,
     "price":1100,
-    "starRating":25
+    "quantity":25
   },
   {
+    "imageUrl":"/assets/images/modern_sofa.webp",
     "id":2,
     "name":"product2",
     "code":"X02",
-    "quantity":200,
+    "discount":200,
     "price":2200,
-    "starRating":40
+    "quantity":40
   },
   {
+    "imageUrl":"/assets/images/modernLamps.jpg",
     "id":3,
     "name":"product3",
     "code":"X03",
-    "quantity":300,
+    "discount":300,
     "price":3300,
-    "starRating":50
+    "quantity":50
   },
   {
+    "imageUrl":"/assets/images/modernLapms.webp",
     "id":4,
     "name":"product4",
     "code":"X04",
-    "quantity":400,
+    "discount":400,
     "price":4400,
-    "starRating":30
+    "quantity":30
   }
 ]

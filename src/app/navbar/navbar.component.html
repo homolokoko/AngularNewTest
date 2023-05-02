@@ -1,29 +1,23 @@
 
 <mat-toolbar>
-    <button (click)="showSidenav()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" color="primary">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <p>OpenUpShop</p>
-    <button (click)="showResume()" id="user" mat-button color="primary">My CV</button>
+    
+    <span routerLink="home" style="cursor:pointer;display:flex;font-size: 30pt;font-weight: 600;font-family: monospace;">
+        <p style="color:lightgreen">TO</p> 
+        <p style="color: blueviolet;">NG</p>
+    </span>
+    <div class="lists">
+        <a class="btn item" routerLink="home" routerLinkActive="text-info">Home</a>
+        <a class="btn item" routerLink="services" routerLinkActive="text-info">Services</a>
+        <a class="btn item" routerLink="products" routerLinkActive="text-info">Products</a>
+        <a class="btn item" routerLink="contact" routerLinkActive="text-info">Contact</a>
+        <a class="btn item" routerLink="about" routerLinkActive="text-info">About</a>
+    </div>
+    <mat-icon class="fa fa-bars btn-bar" color="primary" (click)="showSidenav()" *ngIf="!showFiller"></mat-icon>
+    <mat-icon class="fa fa-close btn-x" color="disabled" (click)="showSidenav()" *ngIf="showFiller"></mat-icon>
 </mat-toolbar>
+<router-outlet></router-outlet>
 
-<table class="table tbl">
-  <tr class="row">
-    <th class="col">ID</th>
-    <th class="col">NAME</th>
-    <th class="col">CODE</th>
-    <th class="col">QUANTITY</th>
-    <th class="col">PRICE</th>
-    <th class="col">STARRATING</th>
-  </tr>
-  <tr class="row" *ngFor="let product of products">
-    <td class="col">{{product.id}}</td>
-    <td class="col">{{product.name}}</td>
-    <td class="col">{{product.code}}</td>
-    <td class="col">{{product.quantity}}</td>
-    <td class="col">{{product.price}}</td>
-    <td class="col">{{product.starRating}}</td>
-  </tr>
-</table>
+
+
 
 

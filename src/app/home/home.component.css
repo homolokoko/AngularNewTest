@@ -1,0 +1,40 @@
+main{
+    width: 100vw;height: 100vh;
+    background-image: url(/assets/images/zerm.jpg);
+    background-size: cover;background-repeat: no-repeat;
+    background-position: center;
+}
+.wrap{
+    width: 100%;height: 100%;background-color: rgba(18, 14, 21, 0.855);
+    display: flex;align-items: center;justify-content: center;
+}
+.main-block{width: 80%;height: 600px;display: flex;justify-content: center;}
+.hello,.signIn{width: 50%;height: 100%;row-gap: 20px;}
+.intro{font-size: 25pt;color: #f0f8ff;font-family: time new roman;}
+.name{font-size: 35pt;font-family: georgia;font-weight: 500;color: #f14f1d;}
+.skill{font-size: 20pt;color: #c5d8d8;font-family: cursive;}
+.frm-sign{
+    display:flex;flex-direction:column;justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.27);border-radius: 15px;width: 50%;
+    height: 70%;padding: 20px;position: relative;
+    
+}
+input:not(#log-in){background-color: #c5d8d810;border: none;color: white;}
+
+@media screen and (max-width:1023px) {
+    main{background-position:top;height: 50vh;}
+    .main-block{width: 100%;}
+    .frm-sign{width: 100%;}
+    .hello{padding:20px}
+    .signIn{padding: 40px;}
+    .intro{font-size: 20pt;}
+    .name{font-size: 20pt;}
+    .skill{font-size: 15pt;}
+}
+
+@media screen and (max-width: 767px){
+    main{height: 100vh;background-size: cover;}
+    .main-block{flex-direction: column;width: 100%;height: 100%;}
+    .hello,.signIn{width: 80%;padding:5px;margin: 0 auto;}
+    .frm-sign{height: 400px;width: 100%;}
+}

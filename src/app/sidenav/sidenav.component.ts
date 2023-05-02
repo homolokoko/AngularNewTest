@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent {
-  @Input() val = '';
+  @Input() val:any;
   
 }

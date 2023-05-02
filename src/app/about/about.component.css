@@ -1,0 +1,12 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin:0;padding:0;
+    /* background-image: url("/assets/images/received_1268591267025031.jpeg"); */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+.main{width: 100%;height: 100%;background-color: #dae1e9;}
+.me{float:right;width: auto;height:100%;}

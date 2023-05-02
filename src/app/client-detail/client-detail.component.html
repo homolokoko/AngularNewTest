@@ -1,0 +1,10 @@
+<p>client-detail works!</p>
+<p>Route is {{_clientid}}</p>
+<button class="btn btn-danger" (click)="onView()">Overview</button>
+<button class="btn btn-warning" (click)="onContact()">Contact</button>
+<router-outlet></router-outlet>
+
+<div class="d-flex">
+    <button (click)="goback(_clientid)" class="btn btn-secondary">back</button>
+    <button (click)="gofront(_clientid)" class="btn btn-primary">forward</button>
+</div>

@@ -1,0 +1,25 @@
+<table class="container">
+    
+    <tr class="row">
+        <td class="col-lg-4 col-md-6" *ngFor="let item of items">
+            <div class="card w-100 h-100 p-2">
+                <div class="title d-flex justify-between">
+                    <p class="name">{{item.name}}</p>
+                    <span class="qty">x{{item.quantity}}</span>
+                </div>
+                <div class="picture"><img src={{item.imageUrl}} alt="" srcset=""></div>
+                <div class="disc-date w-100 d-flex justify-between">
+                    <p class="disc text-danger">${{item.discount}}</p>
+                    <span class="date text-secondary">{{item.id}}</span>
+                </div>
+                <div class="curr-add w-100 d-flex justify-between">
+                    <p class="curr text-primary">${{item.price}}</p>
+                    <a href="#" class=" btn btn-info" id="btn-add">{{item.code}}</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+
+</table>
+
+
