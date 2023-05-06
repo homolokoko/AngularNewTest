@@ -1,0 +1,2 @@
+.frm-contact{width: 400px;height:auto;margin: 50px auto;padding:20px;background-color: aqua;row-gap: 20px;display: flex;flex-direction: column;}
+input,textarea{width:100%}

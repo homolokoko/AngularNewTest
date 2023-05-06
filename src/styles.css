@@ -27,3 +27,5 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .flex-column{flex-direction: column;}
 .arrow-point{cursor:default;}
 .center-items{display:flex;align-items: center;justify-content:center}
+.evenly-items{display: flex;align-items: center;justify-content: space-evenly;}
+.between-items{display: flex;align-items: center;justify-content: space-between;}

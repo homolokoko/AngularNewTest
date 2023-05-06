@@ -1,1 +1,10 @@
-<p>contact works!</p>
+
+<form class="frm-contact rounded" [formGroup]="frmGroup">
+    <h3 style="text-align: center;">Email Me</h3>
+    <input type="email" name="" id="" formControlName="email" class="form-control" placeholder="email123@gmail.com">
+    <textarea name="" id="" cols="30" rows="10" formControlName="message" class="form-control" placeholder="Message here"></textarea>
+    <div class="button">
+        <button mat-flat-button color="">Cancel</button>&nbsp;
+        <button (click)="onSubmit()" mat-flat-button color="primary" type="submit">Send</button>
+    </div>
+</form>

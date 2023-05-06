@@ -1,5 +1,5 @@
 
-<mat-toolbar>
+<mat-toolbar class="bg-nav">
     
     <span routerLink="home" style="cursor:pointer;display:flex;font-size: 30pt;font-weight: 600;font-family: monospace;">
         <p style="color:lightgreen">TO</p> 
@@ -13,7 +13,7 @@
         <a class="btn item" routerLink="about" routerLinkActive="text-info">About</a>
     </div>
     <mat-icon class="fa fa-bars btn-bar" color="primary" (click)="showSidenav()" *ngIf="!showFiller"></mat-icon>
-    <mat-icon class="fa fa-close btn-x" color="disabled" (click)="showSidenav()" *ngIf="showFiller"></mat-icon>
+    <mat-icon class="fa fa-close btn-x" color="primary" (click)="showSidenav()" *ngIf="showFiller"></mat-icon>
 </mat-toolbar>
 <router-outlet></router-outlet>
 

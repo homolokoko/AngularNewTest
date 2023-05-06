@@ -11,7 +11,7 @@
     width:20vw;height:100vh;background-color:rgb(30, 45, 92);
 }
 
-mat-toolbar{display: flex;justify-content: space-between;align-items: center;}
+mat-toolbar{display: flex;justify-content: space-between;align-items: center;background-color: rgba(19, 19, 27, 0.94);}
 
 .btn-bar,.btn-x{display: none;}
 
@@ -26,6 +26,7 @@ th{
 .row{
     box-shadow: 0 1px 0 gray;
 }
+.lists a{color:white}
 
 @media screen and (max-width:500px){
     .lists{display: none;}

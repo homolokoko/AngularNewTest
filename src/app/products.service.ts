@@ -12,7 +12,7 @@ export class ProductsService {
   private _url:string="/assets/products/products.json";
 
   constructor(private http:HttpClient) { }
-  getProduct():Observable<IProducts[]>
+  public getProduct():Observable<IProducts[]>
   {
     return this.http.get<IProducts[]>(this._url);
   }

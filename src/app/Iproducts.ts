@@ -3,6 +3,8 @@ export interface IProducts{
     name:string;
     code:string;
     quantity:number;
+    discount:number;
     price:number;
     starRating:number;
+    imageUrl:string;
 }
