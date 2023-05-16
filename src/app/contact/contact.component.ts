@@ -1,17 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { EmailService } from '../email.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
-  public frmGroup:FormGroup;
+  myfrmGroup :FormGroup;
+
+  constructor(
+    private _frmbuilder:FormBuilder,
+    private _emailService:EmailService,
+    )
+    {
+      // this.frmGroup = this._frmbuilder.group({
+      //   email:'',
+      //   message:'',
+      // });
+    }
 
   ngOnInit(){
-      this.frmGroup = new FormGroup(
+      this.myfrmGroup = new FormGroup(
         {
           email : new FormControl(),
           message : new FormControl(),
@@ -20,7 +32,7 @@ export class ContactComponent implements OnInit {
   }
 
   public onSubmit(){
-    console.log(this.frmGroup)
+    this._emailService.postEmail(this.myfrmGroup).subscribe();
   }
 
   

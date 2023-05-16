@@ -3,9 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-page-not-found',
   template: `
-    <p>
-      page-not-found works!
-    </p>
+    
+    <main>
+      <img src="/assets/images/" alt="">
+    </main>
+
   `,
   styles: [
   ]

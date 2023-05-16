@@ -1,6 +1,6 @@
 app-sidenav{
     position: absolute;
     z-index: 40;
-    top:40px;
-    right:0;
+    top:0;
+    left:0;
 }

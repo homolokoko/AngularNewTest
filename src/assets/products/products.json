@@ -34,5 +34,21 @@
     "discount":400,
     "price":4400,
     "quantity":30
+  },
+  {
+    "imageUrl":"/assets/images/chair.jpg",
+    "id":5,
+    "name":"product5",
+    "code":"X05",
+    "price":5500,
+    "quantity":40
+  },
+  {
+    "imageUrl":"/assets/images/lighball.jpg",
+    "id":6,
+    "name":"product6",
+    "code":"X06",
+    "price":6600,
+    "quantity":50
   }
 ]

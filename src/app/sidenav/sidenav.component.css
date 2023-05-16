@@ -1,5 +1,6 @@
-a{text-decoration: none;padding:5px 10px;background-color: rgb(32, 20, 48);color: white;}
-.sidnav{width: auto;height: auto}
-.lists{display:flex;flex-direction: column;align-items:end;gap: 15px;}
-.btn-close{position: absolute;top:0;right: 0;}
-.item{box-shadow:-2px -2px 0px gray;}
+a{text-decoration: none;padding:5px;color: white;width: 40px;height: 40px;border: 3px solid white;border-radius: 50%;}
+.sidnav{width: auto;height: 100vh;}
+.lists{display:flex;flex-direction: column;align-items:start;gap: 15px;background-color: rgb(32, 20, 48);
+        width:auto;padding:10px;height: 100vh;}
+/* .item{box-shadow:-2px -2px 0px gray;} */
+.active{color:#6464df;border:3px solid #6464df;}

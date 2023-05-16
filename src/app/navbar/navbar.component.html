@@ -1,6 +1,6 @@
 
 <mat-toolbar class="bg-nav">
-    
+    <mat-icon class="fa fa-bars btn-bar" color="primary" (click)="showSidenav()" *ngIf="!showFiller"></mat-icon>
     <span routerLink="home" style="cursor:pointer;display:flex;font-size: 30pt;font-weight: 600;font-family: monospace;">
         <p style="color:lightgreen">TO</p> 
         <p style="color: blueviolet;">NG</p>
@@ -12,9 +12,9 @@
         <a class="btn item" routerLink="contact" routerLinkActive="text-info">Contact</a>
         <a class="btn item" routerLink="about" routerLinkActive="text-info">About</a>
     </div>
-    <mat-icon class="fa fa-bars btn-bar" color="primary" (click)="showSidenav()" *ngIf="!showFiller"></mat-icon>
-    <mat-icon class="fa fa-close btn-x" color="primary" (click)="showSidenav()" *ngIf="showFiller"></mat-icon>
+    
 </mat-toolbar>
+<div class="popup" (click)="showSidenav()" *ngIf="showFiller"></div>
 <router-outlet></router-outlet>
 
 

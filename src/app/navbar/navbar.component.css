@@ -28,8 +28,11 @@ th{
 }
 .lists a{color:white}
 
+.popup{width: 100vw;height: 100vh;background-color: rgba(32, 20, 43, 0.597);position: absolute;z-index: 30;}
+
 @media screen and (max-width:500px){
     .lists{display: none;}
     .btn-bar,.btn-x{display:flex;cursor: pointer;}
     #user{margin-right: 100px;}
+    span{position: absolute;left:70px}
 }
