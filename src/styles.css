@@ -29,3 +29,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .center-items{display:flex;align-items: center;justify-content:center}
 .evenly-items{display: flex;align-items: center;justify-content: space-evenly;}
 .between-items{display: flex;align-items: center;justify-content: space-between;}
+.text-large{font-size: 35pt;}
+.text-medium{font-size: 20pt;}
+.text-small{font-size: 14pt;}
