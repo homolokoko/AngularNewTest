@@ -1,61 +1,22 @@
-main{
-    width: 100vw;height: 90vh;
-    /* background-image: url(/assets/images/zerm.jpg); */
-    background-size: cover;background-repeat: no-repeat;
-    background-position: center;background-attachment: fixed;
+*{
+    box-sizing: border-box;
+    margin: 0;padding:0;
 }
-.wrap{
-    width: 100%;height: 100%;background-color: #4f4854;
-    display: flex;align-items: center;justify-content: center;
-}
-.main-block{width: 80%;height: 600px;display: flex;justify-content: center;}
-.hello,.signIn{width: 50%;height: 100%;row-gap: 20px;}
-.intro{font-size: 25pt;color: #f0f8ff;font-family: time new roman;}
-.name{font-size: 35pt;font-family: georgia;font-weight: 500;color: #f14f1d;}
-.skill{font-size: 20pt;color: #c5d8d8;font-family: cursive;}
-.frm-sign{
-    display:flex;flex-direction:column;justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.27);border-radius: 15px;width: 50%;
-    height: 70%;padding: 20px;position: relative;
+body{
     
+    background-image: url("/assets/images/pexels-moose-photos-1037992.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;height: 100vh;
 }
-.contain{width:50%;height:100%;position: relative;display: flex;}
-.contain .back{position: absolute;top:0;left:0;width: 100%;height: 100%;z-index: 5;animation: obj1 5s linear infinite;}
-@keyframes obj1{
-    50%{
-        top:10px;
-        left:25px;
-    }
-}
-
-.contain .image {position:absolute;bottom:0;right:0;z-index: 6;width: 100%;height: 100%;animation: obj2 5s linear infinite;}
-@keyframes obj2{
-    50%{
-        bottom:10px;
-        right:20px;
-    }
-}
-.contain .image .me{width: 400px;height: 100%;transform: rotateY(180deg);border-radius: 20%;position: absolute;left:150px}
-.contain .image .btmframe{height: 70px;width: 500px;position: absolute;bottom: -30px;left: 80px;}
-.signIn{display:none}
-input:not(#log-in){background-color: #c5d8d810;border: none;color: white;}
-
-@media screen and (max-width:1023px) {
-    main{background-position:top;height: 60vh;}
-    .main-block{width: 100%;}
-    .frm-sign{width: 100%;}
-    .hello{padding:20px}
-    .signIn{padding: 40px;}
-    .intro{font-size: 20pt;}
-    .name{font-size: 20pt;}
-    .skill{font-size: 15pt;}
-}
-
-@media screen and (max-width: 767px){
-    main{height: 100vh;background-size: cover;}
-    .main-block{flex-direction: column;width: 100%;height: 100%;}
-    .hello,.signIn{width: 80%;padding:5px;margin: 0 auto;}
-    .frm-sign{height: 400px;width: 100%;}
-    .contain{position: absolute;top:0;left:0;width: 100%;height: 700px;z-index: 6;}
-    .hello{z-index: 7;}
-}
+content{width: 100vw;height: 100%;display: flex;}
+.desc,.profile{width: 50%;height: 100%;}
+.desc{display: flex;flex-direction: column;row-gap: 20px;justify-content: center;padding: 50px 100px;}
+.profile img{width: 100%;height: 100%;}
+.button{gap: 20px;display:flex;}
+.button button{height: 50px;padding: 0px 20px;}
+.text-large{font-size: 30pt;font-family:segoe;font-weight:900;}
+.text-medium{font-size: 14pt;font-family: cursive;font-weight: bolder;}
+.text-small{font-size: 10pt;font-family: serif;}
+.text-purple{color:#461d70}

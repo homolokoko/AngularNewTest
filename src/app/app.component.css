@@ -1,3 +1,5 @@
+app-navbar{position:static}
+
 app-sidenav{
     position: absolute;
     z-index: 40;
