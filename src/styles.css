@@ -1,4 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~font-awesome/css/font-awesome.css';
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.p-10{padding:10px}
+.text-white{color:white}
+.font-20pt{font-size: 20pt}
+.font-25pt{font-size: 25pt}
+.font-14pt{font-size: 14pt;}
+/* .text-primary{color:#0808ff} */
+.btn-link{width:auto;height:auto;padding:10px;color:white;text-decoration: none;}
+.bg-red{background-color: #ff1313;}
+.nav{height:auto;position:sticky;top:0;display:flex;background-color: aquamarine;}
+.bg-brown{color:#3c1414}
+.bg-pop{background-color: #24194131;}
+.bg-dark{background-color: #11101046;}
+.d-flex{display: flex;}
+.ml-5{margin-left:5px}
+.justify-between{justify-content: space-between;}
+.justify-evenly{justify-content: space-evenly;}
+.list{list-style: none;width:auto;height:auto;padding:10px;box-shadow: 0 0 3px gray;}
+.clickable{cursor: pointer;}
+.item{width:auto;height: auto;border-radius: 5px;}
+.item:hover{color: rgb(83, 226, 242);transition: all 0.5s;}
+.top-10{margin-top:10px}
+.flex-column{flex-direction: column;}
+.arrow-point{cursor:default;}
+.center-items{display:flex;align-items: center;justify-content:center}
+.evenly-items{display: flex;align-items: center;justify-content: space-evenly;}
+.between-items{display: flex;align-items: center;justify-content: space-between;}
+.text-large{font-size: 35pt;}
+.text-medium{font-size: 20pt;}
+.text-small{font-size: 14pt;}

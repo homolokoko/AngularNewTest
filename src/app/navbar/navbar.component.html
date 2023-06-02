@@ -1,18 +1,23 @@
-<mat-toolbar>
-    <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <p>OpenUpShop</p>
-</mat-toolbar>
 
-
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" [style]=" showFiller? 'width:15vw':'width:20vw' " mode="side" >
+<mat-toolbar class="bg-nav">
+    <mat-icon class="fa fa-bars btn-bar" color="primary" (click)="showSidenav()" *ngIf="!showFiller"></mat-icon>
+    <span routerLink="home" style="cursor:pointer;display:flex;font-size: 30pt;font-weight: 600;font-family: monospace;">
+        <p style="color:lightgreen">TO</p> 
+        <p style="color: blueviolet;">NG</p>
+    </span>
+    <div class="lists">
+        <a class="btn item" routerLink="home" routerLinkActive="text-info">Home</a>
+        <a class="btn item" routerLink="services" routerLinkActive="text-info">Services</a>
+        <a class="btn item" routerLink="products" routerLinkActive="text-info">Products</a>
+        <a class="btn item" routerLink="contact" routerLinkActive="text-info">Contact</a>
+        <a class="btn item" routerLink="about" routerLinkActive="text-info">About</a>
+    </div>
     
-    <p>{{myname}}</p>
-    <button (click)="onClick()">show text</button>
-    <button (click)="showFiller = !showFiller" id="btn-showFiller"></button>
-  </mat-drawer>
+</mat-toolbar>
+<div class="popup" (click)="showSidenav()" *ngIf="showFiller"></div>
+<router-outlet></router-outlet>
 
 
-</mat-drawer-container>
+
+
+

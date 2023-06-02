@@ -6,12 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+
+     <!-- <nav class="nav">
+        <a class="btn-link bg-pop" href="" routerLink="/admin" routerLinkActive="text-white bg-dark">Admin</a>
+        <a class="btn-link bg-pop" href="" routerLink="/client" routerLinkActive="text-white bg-dark">Client</a>
+     </nav> -->
     
-    <app-navbar (childfooter)="message=$event"  [name]="Name"></app-navbar>
-    <!-- <app-sidnav></app-sidnav> -->
-    <div class="footer" style="height: auto;position: sticky;background: blue;">
-        {{message}}
-    </div>
+    <app-navbar (showContent)="value=$event" (resume)="show=$event"></app-navbar>
+    <app-sidenav [val]="value"></app-sidenav>
+    <app-account [showResume]="show" style="position: absolute;top:65px;right: 10px;"></app-account>
+    <!-- <app-products>  </app-products> -->
+    
     
 
 </body>

@@ -1,33 +1,38 @@
-.example-spacer {
-    flex: 1 1 auto;
-}
-.container{
-    width:20vw;height:100vh;background-color:aquamarine;
-}
-.example-container {
-    width: 100vw;
-    height: 100vh;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.example-sidenav-content {
-    display: flex;
-    height: 100%;
-    /* align-items: center; */
-    /* justify-content: center; */
-
-}
-
-.example-sidenav {
-    padding: 0px;
-    display: flex;
-    
-}
-#btn-showFiller{
+/* #user{
     position: absolute;
-    top:0;right:0;
-    width:15x;
-    height: 100%;
-    font-size: 5pt;
-    border: none;
+    right: 10px;
+} */
+
+
+
+/* .active{color:black;padding: 5px;} */
+
+.container{
+    width:20vw;height:100vh;background-color:rgb(30, 45, 92);
+}
+
+mat-toolbar{display: flex;justify-content: space-between;align-items: center;background-color: rgba(19, 19, 27, 0.94);position: sticky;}
+
+.btn-bar,.btn-x{display: none;}
+
+
+.tbl{
+    width: 50%;
+    margin: 40px auto;
+}
+th{
+    font-weight: 500;
+}
+.row{
+    box-shadow: 0 1px 0 gray;
+}
+.lists a{color:white}
+
+.popup{width: 100vw;height: 100vh;background-color: rgba(32, 20, 43, 0.597);position: absolute;z-index: 30;}
+
+@media screen and (max-width:500px){
+    .lists{display: none;}
+    .btn-bar,.btn-x{display:flex;cursor: pointer;}
+    #user{margin-right: 100px;}
+    span{position: absolute;left:70px}
 }
