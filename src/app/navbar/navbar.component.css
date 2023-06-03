@@ -32,7 +32,5 @@ th{
 
 @media screen and (max-width:500px){
     .lists{display: none;}
-    .btn-bar,.btn-x{display:flex;cursor: pointer;}
-    #user{margin-right: 100px;}
-    span{position: absolute;left:70px}
+    .btn-bar,.btn-x{display:flex;cursor: pointer;position: absolute; top: .7rem;right:.7rem;}
 }
